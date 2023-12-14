@@ -18,8 +18,8 @@ class ProductController extends Controller
     public function store(Request $request){
        $data = $request->validate([
         'name' => 'required',
-        'qty' => 'required|numeric',
-        'price' => 'required|decimal:0,2',
+        'qty' => 'required',
+        'price' => 'required',
         'description' => 'nullable'
        ]);
 
@@ -29,7 +29,7 @@ class ProductController extends Controller
     }
 
     public function edit(Product $product){
-        return view('products.edit');
+        return view('products.edit',compact('product'));
     }
 
     public function update(Request $request, Product $product){
