@@ -1,0 +1,6 @@
+[submodule "2-migration"]
+	path = 2-migration
+	url = https://github.com/maruf-ux/laravel-migration.git
+[submodule "3-s-query-builder"]
+	path = 3-s-query-builder
+	url = https://github.com/maruf-ux/Laravel-s-query-builder-.git
